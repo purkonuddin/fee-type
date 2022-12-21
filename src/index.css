@@ -1,13 +1,42 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --primary-color: #f16134 !important;
+  --secondary-color: #ffc22a !important;
+  --bg-primary-color: #198754 !important;
+  --bg-secondary-color: #fff !important;
+  --text-primary-color: #ecf2f6;
+  --text-secondary-color: #000;
+  --btn-primary-color: #ffc22a !important;
+  --btn-secondary-color: #212529 !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "> " !important;
+  align-self: baseline;
+  color: #9c9a96 !important;
+  font-weight: bold;
+}
+
+.breadcrumb-item > a {
+  color: #9c9a96 !important;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.breadcrumb > .breadcrumb-item.active {
+  color: var(--primary-color);
 }
